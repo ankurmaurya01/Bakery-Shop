@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Bakes — Artisan Bakery & Confectionery</title>
+  <meta name="description" content="Sweet Bakes — student-friendly artisan bakery near GL Bajaj, Greater Noida. Fresh sourdough bread, croissants, custom cakes, and daily student combos.">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script type="module" crossorigin src="/assets/index-C6rdJjC3.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CR2v0DfE.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       NAVIGATION BAR
+       ========================================== -->
+  <header class="navbar glass" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand" data-tab-target="home">
+        <i class="fa-solid fa-wheat-awn"></i> Sweet Bakes
+      </a>
+      
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#" class="nav-link active" data-tab-target="home">Home</a>
+        <a href="#" class="nav-link" data-tab-target="menu">Menu</a>
+        <a href="#" class="nav-link" data-tab-target="about">About Us</a>
+        <a href="#" class="nav-link" data-tab-target="contact">Order / Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="action-btn" id="theme-toggle-btn" aria-label="Toggle dark/light theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        
+        <!-- Cart Toggle -->
+        <button class="action-btn" id="cart-toggle-btn" aria-label="Open shopping cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="nav-cart-count">0</span>
+        </button>
+        
+        <!-- Order CTA -->
+        <a href="#" class="btn small" data-tab-target="contact">Order Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       MAIN APP VIEWS
+       ========================================== -->
+  <main class="view-container">
+
+    <!-- 1. HOME VIEW -->
+    <div id="home-view" class="app-view active">
+      <!-- Hero -->
+      <section class="hero-sec">
+        <div class="container hero-content">
+          <div class="hero-left">
+            <span class="hero-tag">Artisan Bakery & Cafe</span>
+            <h1 class="hero-title">Freshly baked <span>happiness</span> every morning</h1>
+            <p class="hero-lead">Grab a quick, warm croissant on the way to class, or pre-order a custom cake for your next celebration. Freshly made near GL Bajaj, Greater Noida.</p>
+            <div class="hero-ctas">
+              <a href="#" class="btn" data-tab-target="menu">Explore Menu <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#" class="btn secondary" data-tab-target="contact">Place Custom Order</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <h3>8:00 AM</h3>
+                <p>Baked Daily Fresh</p>
+              </div>
+              <div class="stat-item">
+                <h3>100%</h3>
+                <p>Real Dairy Butter</p>
+              </div>
+              <div class="stat-item">
+                <h3>15%</h3>
+                <p>Student Discount</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="hero-collage">
+              <img class="collage-main" src="/flaky_croissant.png" alt="Stacked golden flaky croissants" />
+              <img class="collage-secondary" src="/sourdough_loaf.png" alt="Rustic sourdough loaf bread" />
+              <div class="collage-badge">
+                <div class="badge-icon"><i class="fa-solid fa-fire-burner"></i></div>
+                <div class="badge-text">
+                  <h4>Fresh from Oven</h4>
+                  <p>Daily at 8:00 AM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured specials showcase -->
+      <section class="section specials-showcase">
+        <div class="container">
+          <h2 class="section-title">Today's Highlight</h2>
+          <p class="section-desc">Straight from our ovens, this batch is limited. Snag one before it sells out!</p>
+          
+          <div class="special-card">
+            <div class="special-img">
+              <img src="/orange_tart.png" alt="Exquisite orange almond tart with fresh oranges" />
+            </div>
+            <div class="special-info">
+              <span class="special-tag">Chef's Signature</span>
+              <h3>Orange Almond Tart</h3>
+              <p>Baked with local almond frangipane, crisp sweet pastry crust, and layered with sweet candied local oranges. Decadently buttery, yet perfectly balanced and tangy.</p>
+              <div class="special-price">₹180</div>
+              <button class="btn add-to-cart-action" data-item-id="orange-almond-tart">
+                <i class="fa-solid fa-plus"></i> Add to Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section testimonials-section">
+        <div class="container">
+          <h2 class="section-title">Loved by Students & Neighbors</h2>
+          <p class="section-desc">Here is what our campus community near GL Bajaj has to say.</p>
+          
+          <div class="testimonials-container">
+            <!-- Slides -->
+            <div class="testimonial-slide active" data-index="0">
+              <p class="testimonial-quote">"Best croissants in Greater Noida. Seriously, they are so flaky and buttery every single morning. The student combo makes it super affordable!"</p>
+              <p class="testimonial-author">Abhi Shek</p>
+              <p class="testimonial-role">GL Bajaj Student</p>
+            </div>
+            
+            <div class="testimonial-slide" data-index="1">
+              <p class="testimonial-quote">"We ordered a custom chocolate birthday cake for my sister. The decoration was neat and the cream felt light and real. Totally recommended!"</p>
+              <p class="testimonial-author">Rohit Sharma</p>
+              <p class="testimonial-role">Local Resident</p>
+            </div>
+            
+            <div class="testimonial-slide" data-index="2">
+              <p class="testimonial-quote">"The Study Combo (Coffee + Croissant) is my absolute savior during exam weeks. Quick service and extremely cozy atmosphere!"</p>
+              <p class="testimonial-author">Khushi Kapoor</p>
+              <p class="testimonial-role">College Student</p>
+            </div>
+          </div>
+          
+          <div class="carousel-indicators" id="carousel-indicators">
+            <span class="indicator-dot active" data-slide="0"></span>
+            <span class="indicator-dot" data-slide="1"></span>
+            <span class="indicator-dot" data-slide="2"></span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 2. MENU VIEW -->
+    <div id="menu-view" class="app-view">
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Artisan Baking Menu</h2>
+          <p class="section-desc">Handcrafted items baked fresh daily with zero artificial preservatives.</p>
+          
+          <!-- Menu control bar -->
+          <div class="menu-controls">
+            <div class="menu-tabs">
+              <button class="menu-tab active" data-filter="all">All Items</button>
+              <button class="menu-tab" data-filter="breads">Breads</button>
+              <button class="menu-tab" data-filter="pastries">Pastries</button>
+              <button class="menu-tab" data-filter="cakes">Cakes</button>
+              <button class="menu-tab" data-filter="combos">Student Combos</button>
+            </div>
+            
+            <!-- Student Discount Toggle -->
+            <div class="student-toggle-container">
+              <span class="student-toggle-label">
+                <i class="fa-solid fa-graduation-cap"></i> GL Bajaj Student Discount
+              </span>
+              <label class="switch">
+                <input type="checkbox" id="student-discount-toggle" />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          
+          <!-- Menu Grid -->
+          <div class="grid-4" id="menu-grid">
+            <!-- Dynamic menu items injected here -->
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 3. ABOUT VIEW -->
+    <div id="about-view" class="app-view">
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Our Baking Story</h2>
+          <p class="section-desc">Crafting joy and sourdough, one batch at a time.</p>
+          
+          <div class="about-story">
+            <div class="about-story-text">
+              <h3>From Campus Pop-Up to Neighborhood Hearth</h3>
+              <p>Sweet Bakes started with a simple passion: to bring genuine European-style baking to the student community near GL Bajaj in Greater Noida. What began as a hostel baking experiment quickly expanded into a local favorite.</p>
+              <p>We believe baking is an art that shouldn't be rushed. That is why our sourdough ferments slowly for 24 hours, and our croissants are laminated with real butter over days to achieve dozens of paper-thin layers.</p>
+              <p>Supporting our community is core to what we do. We source our flour from local mills and collaborate with campus clubs for pop-up workshops.</p>
+            </div>
+            <div class="about-story-img">
+              <img src="/celebration_cake.png" alt="Baking with passion and fresh cream decoration" />
+            </div>
+          </div>
+
+          <!-- Value pillars -->
+          <div class="grid-3">
+            <div class="card about-values-card">
+              <div class="value-icon"><i class="fa-solid fa-seedling"></i></div>
+              <h4>100% Honest Ingredients</h4>
+              <p>Real farm butter, locally milled grain flour, and fresh seasonal fruits. Absolutely zero preservatives or margarine.</p>
+            </div>
+            
+            <div class="card about-values-card">
+              <div class="value-icon"><i class="fa-solid fa-wallet"></i></div>
+              <h4>Student-Friendly Pricing</h4>
+              <p>Special combi deals and a flat 15% discount for students to make high-quality artisan pastries accessible.</p>
+            </div>
+            
+            <div class="card about-values-card">
+              <div class="value-icon"><i class="fa-solid fa-users"></i></div>
+              <h4>Baking Workshops</h4>
+              <p>From basic bread shaping to advanced pastry lamination, we run weekly hands-on baking classes for beginners.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog highlights section -->
+      <section class="section specials-showcase">
+        <div class="container">
+          <h2 class="section-title">From the Oven — Blog</h2>
+          <p class="section-desc">Behind-the-scenes recipes, quick baking tips, and updates.</p>
+          
+          <div class="grid-3">
+            <div class="card post-card">
+              <img class="post-image" src="/flaky_croissant.png" alt="Croissant recipe tips" />
+              <div class="post-body">
+                <span class="post-meta">June 15, 2026 • Tips & Tricks</span>
+                <h4>Secrets of Perfect Lamination at Home</h4>
+                <p>Keeping butter cold and chilling the dough correctly is key. Here is a step-by-step guide to flakey hoster croissants.</p>
+                <a href="#" class="post-link">Read Recipe <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="card post-card">
+              <img class="post-image" src="/sourdough_loaf.png" alt="Sourdough tips" />
+              <div class="post-body">
+                <span class="post-meta">June 10, 2026 • Bread Science</span>
+                <h4>Understanding Sourdough Wild Starters</h4>
+                <p>How to feed and nurture a wild yeast starter in the warm climate of Greater Noida for maximum crust oven rise.</p>
+                <a href="#" class="post-link">Read Guide <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="card post-card">
+              <img class="post-image" src="/orange_tart.png" alt="Tart recipe" />
+              <div class="post-body">
+                <span class="post-meta">May 28, 2026 • Recipes</span>
+                <h4>Summer Fruit Tarts Decoded</h4>
+                <p>The secret is frangipane! Learn how almond cream base keeps the tart moist even with juicy summer citrus toppings.</p>
+                <a href="#" class="post-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 4. CONTACT & ORDER VIEW -->
+    <div id="contact-view" class="app-view">
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Order & Contact Us</h2>
+          <p class="section-desc">Place custom orders, get custom quotes, or visit us in-store.</p>
+          
+          <div class="contact-grid">
+            <!-- Left col: info & map -->
+            <div>
+              <div class="contact-info-list">
+                <div class="contact-info-item">
+                  <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="contact-info-text">
+                    <h5>Bakery Address</h5>
+                    <p>Opposite GL Bajaj Main Gate, Knowledge Park III,<br>Greater Noida, Uttar Pradesh 201310</p>
+                  </div>
+                </div>
+                
+                <div class="contact-info-item">
+                  <div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div>
+                  <div class="contact-info-text">
+                    <h5>Opening Hours</h5>
+                    <p>Monday - Saturday: 8:00 AM – 8:00 PM<br>Sunday: 9:00 AM – 6:00 PM</p>
+                  </div>
+                </div>
+                
+                <div class="contact-info-item">
+                  <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div class="contact-info-text">
+                    <h5>Phone & Custom Bookings</h5>
+                    <p>+91 94507 53209</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Store Map Image Placeholder -->
+              <div class="card" style="padding: 12px; height: 260px; overflow: hidden;">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.7725916120894!2d77.49137351507984!3d28.456285482487926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc1e5b5555555%3A0x6b4ef88e9bb3cc1c!2sGL%20Bajaj%20Institute%20of%20Technology%20and%20Management!5e0!3m2!1sen!2sin!4v1687000000000!5m2!1sen!2sin" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0; border-radius: var(--radius-sm);" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+
+            <!-- Right col: form builder -->
+            <div class="card">
+              <h3 style="font-family: var(--font-heading); margin-bottom: 24px; font-size: 1.6rem;">Place Order / Quote Request</h3>
+              <form id="order-form">
+                <div class="form-group">
+                  <label class="form-label" for="form-name">Your Full Name</label>
+                  <input type="text" id="form-name" class="form-control" placeholder="Aman Sharma" required />
+                </div>
+                
+                <div class="form-group">
+                  <label class="form-label" for="form-phone">WhatsApp Phone Number</label>
+                  <input type="tel" id="form-phone" class="form-control" placeholder="9876543210" required />
+                </div>
+
+                <div class="form-checkbox">
+                  <input type="checkbox" id="form-is-student" />
+                  <label for="form-is-student" style="font-weight: 600; cursor: pointer;">I am a GL Bajaj Student (15% discount applies)</label>
+                </div>
+                
+                <div class="form-group" id="form-student-id-container" style="display: none;">
+                  <label class="form-label" for="form-student-id">GL Bajaj Student ID / Roll No.</label>
+                  <input type="text" id="form-student-id" class="form-control" placeholder="GLB2026CS123" />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="form-cart-summary">Selected Menu Items</label>
+                  <textarea id="form-cart-summary" class="form-control" readonly placeholder="Choose items from the Menu tab or open the cart drawer to add items."></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="form-notes">Special Decoration / Delivery Notes</label>
+                  <textarea id="form-notes" class="form-control" placeholder="E.g., Write 'Happy Birthday Abhi' on cake, deliver by 4 PM..."></textarea>
+                </div>
+
+                <div style="margin-bottom: 24px; font-weight: 800; font-size: 1.2rem;" id="form-total-cost">
+                  Estimated Total: ₹0
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">
+                  <i class="fa-brands fa-whatsapp"></i> Send Order via WhatsApp
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- ==========================================
+       CART OVERLAY & DRAWER
+       ========================================== -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+    <div class="cart-header flex-between">
+      <h3 id="cart-title">Your Order Cart</h3>
+      <button class="cart-close-btn" id="cart-close-btn" aria-label="Close cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    
+    <div class="cart-items-container" id="cart-items-list">
+      <!-- Injected by JavaScript -->
+    </div>
+    
+    <div class="cart-footer">
+      <div class="cart-summary-line">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">₹0</span>
+      </div>
+      <div class="cart-summary-line discount" id="cart-discount-line" style="display: none;">
+        <span>Student Discount (15%)</span>
+        <span id="cart-discount">-₹0</span>
+      </div>
+      <div class="cart-total-line">
+        <span>Total</span>
+        <span id="cart-total">₹0</span>
+      </div>
+      <button class="btn cart-checkout-btn" id="cart-checkout-btn">
+        Proceed to Checkout
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <a href="#" class="footer-logo" data-tab-target="home">
+          <i class="fa-solid fa-wheat-awn"></i> Sweet Bakes
+        </a>
+        <p class="footer-about-text">Artisan bakery handcrafting premium breads, croissants, and customized celebration cakes near GL Bajaj, Greater Noida.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <nav class="footer-nav">
+          <a href="#" data-tab-target="home">Home</a>
+          <a href="#" data-tab-target="menu">Menu & Combos</a>
+          <a href="#" data-tab-target="about">Baking Story</a>
+          <a href="#" data-tab-target="contact">Order / Support</a>
+        </nav>
+      </div>
+
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <nav class="footer-nav" style="color: var(--text-muted); font-size: 0.9rem; gap: 8px;">
+          <p>Mon - Sat: 8:00 AM – 8:00 PM</p>
+          <p>Sunday: 9:00 AM – 6:00 PM</p>
+          <p style="color: var(--color-primary); font-weight: 700;">Fresh Bread daily at 8:00 AM!</p>
+        </nav>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <nav class="footer-nav" style="color: var(--text-muted); font-size: 0.9rem; gap: 8px;">
+          <p><i class="fa-solid fa-phone" style="margin-right: 6px;"></i> +91 94507 53209</p>
+          <p><i class="fa-solid fa-envelope" style="margin-right: 6px;"></i> orders@sweetbakes.in</p>
+          <p><i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i> Near GL Bajaj, Greater Noida</p>
+        </nav>
+      </div>
+    </div>
+    
+    <div class="container copyright">
+      <p>© <span id="year-home"></span> Sweet Bakes. Handcrafted with love.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
